@@ -30,7 +30,7 @@ fa = face_alignment.FaceAlignment(face_alignment.LandmarksType._2D, flip_input=F
 input = io.imread('../test/assets/aflw-test.jpg')
 preds = fa.get_landmarks(input)
 ```
-
+这里的代码需要使用终端调试，可能是因为没有cuda，需要强制使用CPU的torch版本
 #### Detect 3D facial landmarks in pictures
 
 <p align='center'>
